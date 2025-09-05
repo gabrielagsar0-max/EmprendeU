@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - EmprendeU</title>
+    <link rel="stylesheet" href="Stylealimento.css">
+</head>
+
+<body>
+    <main>
+        <header class="header">
+            <div class="header-content">
+                <img src="1.0 Multimedia/2.0 Logos e imagenes/3.2 Logo 02 .png" alt="Logotipo de EmprendeU" class="Logotipo">
+            </div>
+            <button class="btn-volver" onclick="window.location.href='index.html';">
+                ← Volver a inicio
+            </button>
+        </header>
+
+        <section class="hero-section">
+            <h2 class="titulo-principal">Servicios</h2>
+            <p class="subtitulo">Descubre los servicios profesionales de nuestra comunidad</p>
+        </section>
+
+        <!--Cards emprendimientos-->
+        <section class="productos-section">
+            <div class="container">
+                <div class="productos-grid">
+                    <div class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/5.0 TUTORING.png" alt="TUTORING Services" />
+                        </div>
+                        <div class="producto-info">
+                            <h3>TUTORING Services</h3>
+                            <p>Servicios de tutoría y educación personalizada</p>
+                            <button class="btn-producto" onclick="abrirModal('modal-tutoring')">Ver Más</button>
+                        </div>
+                    </div>
+                    
+                    <div class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/3.0 HARDWARE.png" alt="HARDWARE Solutions" />
+                        </div>
+                        <div class="producto-info">
+                            <h3>HARDWARE Solutions</h3>
+                            <p>Soluciones tecnológicas y servicios de hardware</p>
+                            <button class="btn-producto" onclick="abrirModal('modal-hardware')">Ver Más</button>
+                        </div>
+                    </div>
+                    
+                    <div class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/4.0 KNITT.png" alt="KNITT Services" />
+                        </div>
+                        <div class="producto-info">
+                            <h3>KNITT Services</h3>
+                            <p>Servicios de diseño y confección personalizada</p>
+                            <button class="btn-producto" onclick="abrirModal('modal-knitt-services')">Ver Más</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modales -->
+        <!-- Modal TUTORING Services -->
+        <div id="modal-tutoring" class="modal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>TUTORING Services</h2>
+                        <span class="close" onclick="cerrarModal('modal-tutoring')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/5.0 TUTORING.png" alt="TUTORING Services" />
+                        </div>
+                        <div class="modal-info">
+                            <h3>Servicios de Tutoría y Educación</h3>
+                            <p>TUTORING Services ofrece servicios educativos personalizados para estudiantes de todas las edades. Nuestro equipo de profesionales está comprometido con el éxito académico de cada estudiante.</p>
+                            <ul>
+                                <li>📚 Tutorías personalizadas en matemáticas</li>
+                                <li>🔬 Clases de ciencias y química</li>
+                                <li>📖 Apoyo en lectura y escritura</li>
+                                <li>💻 Preparación para exámenes</li>
+                            </ul>
+                            <div class="contacto-info">
+                                <h4>Información de Contacto:</h4>
+                                <p><strong>Teléfono:</strong> +57 300 111 0000</p>
+                                <p><strong>Instagram:</strong> @tutoring_services</p>
+                                <p><strong>Horario:</strong> Lunes a Viernes 3:00 PM - 8:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal HARDWARE Solutions -->
+        <div id="modal-hardware" class="modal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>HARDWARE Solutions</h2>
+                        <span class="close" onclick="cerrarModal('modal-hardware')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/3.0 HARDWARE.png" alt="HARDWARE Solutions" />
+                        </div>
+                        <div class="modal-info">
+                            <h3>Soluciones Tecnológicas y Hardware</h3>
+                            <p>HARDWARE Solutions proporciona servicios técnicos especializados en hardware y soluciones tecnológicas. Nuestro equipo de expertos está listo para resolver cualquier problema técnico.</p>
+                            <ul>
+                                <li>💻 Reparación y mantenimiento de computadores</li>
+                                <li>🔧 Instalación y configuración de hardware</li>
+                                <li>🖥️ Montaje de equipos personalizados</li>
+                                <li>📱 Reparación de dispositivos móviles</li>
+                            </ul>
+                            <div class="contacto-info">
+                                <h4>Información de Contacto:</h4>
+                                <p><strong>Teléfono:</strong> +57 300 222 1111</p>
+                                <p><strong>Instagram:</strong> @hardware_solutions</p>
+                                <p><strong>Horario:</strong> Lunes a Sábado 8:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal KNITT Services -->
+        <div id="modal-knitt-services" class="modal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>KNITT Services</h2>
+                        <span class="close" onclick="cerrarModal('modal-knitt-services')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/4.0 KNITT.png" alt="KNITT Services" />
+                        </div>
+                        <div class="modal-info">
+                            <h3>Servicios de Diseño y Confección</h3>
+                            <p>KNITT Services ofrece servicios profesionales de diseño y confección personalizada. Desde la conceptualización hasta la entrega final, nos encargamos de cada detalle.</p>
+                            <ul>
+                                <li>✂️ Confección de ropa personalizada</li>
+                                <li>🎨 Diseño de patrones únicos</li>
+                                <li>🔧 Reparación y ajustes de prendas</li>
+                                <li>📏 Consultoría en moda y estilo</li>
+                            </ul>
+                            <div class="contacto-info">
+                                <h4>Información de Contacto:</h4>
+                                <p><strong>Teléfono:</strong> +57 300 333 2222</p>
+                                <p><strong>Instagram:</strong> @knitt_services</p>
+                                <p><strong>Horario:</strong> Martes a Sábado 9:00 AM - 7:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025, Todos los derechos reservados<br>
+                <strong>EmprendeU</strong> <br>
+                emprendimientos de nuestra comunidad educativa UPTC<br>
+                contácto <br>
+                <a href="#" class="nav-link">Instagram -</a><a href="#" class="nav-link">Facebook</a>
+            </p>
+        </footer>
+    </main>
+
+    <script>
+        // Función para abrir modal
+        function abrirModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Prevenir scroll del body
+        }
+
+        // Función para cerrar modal
+        function cerrarModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Restaurar scroll del body
+        }
+
+        // Cerrar modal al hacer clic fuera del contenido
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // Cerrar modal con tecla Escape
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                const modales = document.querySelectorAll('.modal');
+                modales.forEach(modal => {
+                    if (modal.style.display === 'block') {
+                        modal.style.display = 'none';
+                        document.body.style.overflow = 'auto';
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

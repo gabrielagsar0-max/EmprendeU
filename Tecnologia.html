@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnología - EmprendeU</title>
+    <link rel="stylesheet" href="Stylealimento.css">
+</head>
+
+<body>
+    <main>
+        <header class="header">
+            <div class="header-content">
+                <img src="1.0 Multimedia/2.0 Logos e imagenes/3.2 Logo 02 .png" alt="Logotipo de EmprendeU" class="Logotipo">
+            </div>
+            <button class="btn-volver" onclick="window.location.href='index.html';">
+                ← Volver a inicio
+            </button>
+        </header>
+
+        <section class="hero-section">
+            <h2 class="titulo-principal">Tecnología</h2>
+            <p class="subtitulo">Descubre las innovaciones tecnológicas de nuestra comunidad</p>
+        </section>
+
+        <!--Cards emprendimientos-->
+        <section class="productos-section">
+            <div class="container">
+                <div class="productos-grid">
+                    <div class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/3.0 HARDWARE.png" alt="HARDWARE Tech" />
+                        </div>
+                        <div class="producto-info">
+                            <h3>HARDWARE Tech</h3>
+                            <p>Soluciones tecnológicas avanzadas y hardware especializado</p>
+                            <button class="btn-producto" onclick="abrirModal('modal-hardware-tech')">Ver Más</button>
+                        </div>
+                    </div>
+                    
+                    <div class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/5.0 TUTORING.png" alt="Tech Education" />
+                        </div>
+                        <div class="producto-info">
+                            <h3>Tech Education</h3>
+                            <p>Educación tecnológica y capacitación en nuevas tecnologías</p>
+                            <button class="btn-producto" onclick="abrirModal('modal-tech-education')">Ver Más</button>
+                        </div>
+                    </div>
+                    
+                    <div class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/2.0 NECKALE.png" alt="Digital Solutions" />
+                        </div>
+                        <div class="producto-info">
+                            <h3>Digital Solutions</h3>
+                            <p>Soluciones digitales y servicios de tecnología web</p>
+                            <button class="btn-producto" onclick="abrirModal('modal-digital-solutions')">Ver Más</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modales -->
+        <!-- Modal HARDWARE Tech -->
+        <div id="modal-hardware-tech" class="modal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>HARDWARE Tech</h2>
+                        <span class="close" onclick="cerrarModal('modal-hardware-tech')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/3.0 HARDWARE.png" alt="HARDWARE Tech" />
+                        </div>
+                        <div class="modal-info">
+                            <h3>Soluciones Tecnológicas Avanzadas</h3>
+                            <p>HARDWARE Tech se especializa en proporcionar soluciones tecnológicas de vanguardia para empresas y particulares. Nuestro equipo de expertos está a la vanguardia de la innovación tecnológica.</p>
+                            <ul>
+                                <li>🖥️ Sistemas de computación de alto rendimiento</li>
+                                <li>🔧 Servicios de mantenimiento especializado</li>
+                                <li>📱 Desarrollo de aplicaciones móviles</li>
+                                <li>🌐 Soluciones de red y conectividad</li>
+                            </ul>
+                            <div class="contacto-info">
+                                <h4>Información de Contacto:</h4>
+                                <p><strong>Teléfono:</strong> +57 300 444 3333</p>
+                                <p><strong>Instagram:</strong> @hardware_tech</p>
+                                <p><strong>Horario:</strong> Lunes a Viernes 8:00 AM - 7:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Tech Education -->
+        <div id="modal-tech-education" class="modal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Tech Education</h2>
+                        <span class="close" onclick="cerrarModal('modal-tech-education')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/5.0 TUTORING.png" alt="Tech Education" />
+                        </div>
+                        <div class="modal-info">
+                            <h3>Educación Tecnológica Especializada</h3>
+                            <p>Tech Education ofrece programas de capacitación y educación en las últimas tecnologías. Preparamos a nuestros estudiantes para el futuro digital con metodologías innovadoras.</p>
+                            <ul>
+                                <li>💻 Programación y desarrollo web</li>
+                                <li>🤖 Inteligencia artificial y machine learning</li>
+                                <li>📊 Análisis de datos y big data</li>
+                                <li>🔒 Ciberseguridad y protección digital</li>
+                            </ul>
+                            <div class="contacto-info">
+                                <h4>Información de Contacto:</h4>
+                                <p><strong>Teléfono:</strong> +57 300 555 4444</p>
+                                <p><strong>Instagram:</strong> @tech_education</p>
+                                <p><strong>Horario:</strong> Lunes a Sábado 9:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Digital Solutions -->
+        <div id="modal-digital-solutions" class="modal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Digital Solutions</h2>
+                        <span class="close" onclick="cerrarModal('modal-digital-solutions')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/2.0 NECKALE.png" alt="Digital Solutions" />
+                        </div>
+                        <div class="modal-info">
+                            <h3>Soluciones Digitales Innovadoras</h3>
+                            <p>Digital Solutions transforma ideas en realidad digital. Ofrecemos servicios completos de desarrollo web, marketing digital y automatización de procesos empresariales.</p>
+                            <ul>
+                                <li>🌐 Desarrollo de sitios web y aplicaciones</li>
+                                <li>📱 Marketing digital y redes sociales</li>
+                                <li>⚡ Automatización de procesos empresariales</li>
+                                <li>📈 Consultoría en transformación digital</li>
+                            </ul>
+                            <div class="contacto-info">
+                                <h4>Información de Contacto:</h4>
+                                <p><strong>Teléfono:</strong> +57 300 666 5555</p>
+                                <p><strong>Instagram:</strong> @digital_solutions</p>
+                                <p><strong>Horario:</strong> Lunes a Viernes 8:00 AM - 8:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025, Todos los derechos reservados<br>
+                <strong>EmprendeU</strong> <br>
+                emprendimientos de nuestra comunidad educativa UPTC<br>
+                contácto <br>
+                <a href="#" class="nav-link">Instagram -</a><a href="#" class="nav-link">Facebook</a>
+            </p>
+        </footer>
+    </main>
+
+    <script>
+        // Función para abrir modal
+        function abrirModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Prevenir scroll del body
+        }
+
+        // Función para cerrar modal
+        function cerrarModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Restaurar scroll del body
+        }
+
+        // Cerrar modal al hacer clic fuera del contenido
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // Cerrar modal con tecla Escape
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                const modales = document.querySelectorAll('.modal');
+                modales.forEach(modal => {
+                    if (modal.style.display === 'block') {
+                        modal.style.display = 'none';
+                        document.body.style.overflow = 'auto';
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

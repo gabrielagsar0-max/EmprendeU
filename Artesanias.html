@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artesanías - EmprendeU</title>
+    <link rel="stylesheet" href="Stylealimento.css">
+</head>
+
+<body>
+    <main>
+        <header class="header">
+            <div class="header-content">
+                <img src="1.0 Multimedia/2.0 Logos e imagenes/3.2 Logo 02 .png" alt="Logotipo de EmprendeU" class="Logotipo">
+            </div>
+            <button class="btn-volver" onclick="window.location.href='index.html';">
+                ← Volver a inicio
+            </button>
+        </header>
+
+        <section class="hero-section">
+            <h2 class="titulo-principal">Artesanías</h2>
+            <p class="subtitulo">Descubre las hermosas creaciones artesanales de nuestra comunidad</p>
+        </section>
+
+        <!--Cards emprendimientos-->
+        <section class="productos-section">
+            <div class="container">
+                <div class="productos-grid">
+                    <div class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/4.0 KNITT.png" alt="KNITT" />
+                        </div>
+                        <div class="producto-info">
+                            <h3>KNITT</h3>
+                            <p>Artesanías tejidas a mano con amor y dedicación</p>
+                            <button class="btn-producto" onclick="abrirModal('modal-knitt')">Ver Más</button>
+                        </div>
+                    </div>
+                    
+                    <div class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/1.0 TORTAS&TORTAS.png" alt="Tortas & Tortas" />
+                        </div>
+                        <div class="producto-info">
+                            <h3>Tortas & Tortas</h3>
+                            <p>Artesanías comestibles y decorativas únicas</p>
+                            <button class="btn-producto" onclick="abrirModal('modal-tortas')">Ver Más</button>
+                        </div>
+                    </div>
+                    
+                    <div class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/2.0 NECKALE.png" alt="NECKALE" />
+                        </div>
+                        <div class="producto-info">
+                            <h3>NECKALE</h3>
+                            <p>Accesorios artesanales con estilo único</p>
+                            <button class="btn-producto" onclick="abrirModal('modal-neckale')">Ver Más</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modales -->
+        <!-- Modal KNITT -->
+        <div id="modal-knitt" class="modal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>KNITT</h2>
+                        <span class="close" onclick="cerrarModal('modal-knitt')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/4.0 KNITT.png" alt="KNITT" />
+                        </div>
+                        <div class="modal-info">
+                            <h3>Artesanías Tejidas a Mano</h3>
+                            <p>KNITT crea hermosas artesanías tejidas a mano con técnicas tradicionales y materiales de alta calidad. Cada pieza es única y está elaborada con amor y dedicación.</p>
+                            <ul>
+                                <li>🧶 Suéteres y chalecos personalizados</li>
+                                <li>🧣 Bufandas y guantes de lana</li>
+                                <li>🎒 Bolsos y mochilas tejidas</li>
+                                <li>🏠 Decoración para el hogar</li>
+                            </ul>
+                            <div class="contacto-info">
+                                <h4>Información de Contacto:</h4>
+                                <p><strong>Teléfono:</strong> +57 300 111 2222</p>
+                                <p><strong>Instagram:</strong> @knitt_artesanias</p>
+                                <p><strong>Horario:</strong> Lunes a Sábado 9:00 AM - 7:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Tortas & Tortas -->
+        <div id="modal-tortas" class="modal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Tortas & Tortas</h2>
+                        <span class="close" onclick="cerrarModal('modal-tortas')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/1.0 TORTAS&TORTAS.png" alt="Tortas & Tortas" />
+                        </div>
+                        <div class="modal-info">
+                            <h3>Artesanías Comestibles Únicas</h3>
+                            <p>Tortas & Tortas combina la artesanía con la repostería, creando piezas únicas que son tanto decorativas como deliciosas. Cada creación es una obra de arte comestible.</p>
+                            <ul>
+                                <li>🎂 Tortas decoradas artesanales</li>
+                                <li>🍪 Galletas personalizadas</li>
+                                <li>🧁 Cupcakes temáticos</li>
+                                <li>🎨 Decoración comestible</li>
+                            </ul>
+                            <div class="contacto-info">
+                                <h4>Información de Contacto:</h4>
+                                <p><strong>Teléfono:</strong> +57 300 222 3333</p>
+                                <p><strong>Instagram:</strong> @tortasytortas_art</p>
+                                <p><strong>Horario:</strong> Martes a Domingo 8:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal NECKALE -->
+        <div id="modal-neckale" class="modal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>NECKALE</h2>
+                        <span class="close" onclick="cerrarModal('modal-neckale')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/2.0 NECKALE.png" alt="NECKALE" />
+                        </div>
+                        <div class="modal-info">
+                            <h3>Accesorios Artesanales con Estilo</h3>
+                            <p>NECKALE diseña y crea accesorios únicos que combinan tradición y modernidad. Cada pieza está hecha a mano con materiales cuidadosamente seleccionados.</p>
+                            <ul>
+                                <li>📿 Collares y pulseras artesanales</li>
+                                <li>💍 Anillos únicos y personalizados</li>
+                                <li>👜 Bolsos y carteras de cuero</li>
+                                <li>👒 Accesorios para el cabello</li>
+                            </ul>
+                            <div class="contacto-info">
+                                <h4>Información de Contacto:</h4>
+                                <p><strong>Teléfono:</strong> +57 300 333 4444</p>
+                                <p><strong>Instagram:</strong> @neckale_accesorios</p>
+                                <p><strong>Horario:</strong> Lunes a Viernes 10:00 AM - 8:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025, Todos los derechos reservados<br>
+                <strong>EmprendeU</strong> <br>
+                emprendimientos de nuestra comunidad educativa UPTC<br>
+                contácto <br>
+                <a href="#" class="nav-link">Instagram -</a><a href="#" class="nav-link">Facebook</a>
+            </p>
+        </footer>
+    </main>
+
+    <script>
+        // Función para abrir modal
+        function abrirModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Prevenir scroll del body
+        }
+
+        // Función para cerrar modal
+        function cerrarModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Restaurar scroll del body
+        }
+
+        // Cerrar modal al hacer clic fuera del contenido
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // Cerrar modal con tecla Escape
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                const modales = document.querySelectorAll('.modal');
+                modales.forEach(modal => {
+                    if (modal.style.display === 'block') {
+                        modal.style.display = 'none';
+                        document.body.style.overflow = 'auto';
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Usuario</title>
+        <link rel="stylesheet" href="Styleusuario.css">
+        <script src="Scriptusuario.js"></script>    
+    </head>
+    <body>
+        <!-- ENCABEZADO PRINCIPAL DE USUARIO MEJORADO -->
+        <header class="header-usuario" style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(90deg, var(--color-secundario) 80%, var(--color-boton) 100%);
+            padding: 22px 0 18px 0;
+            border-radius: 0 0 24px 24px;
+            box-shadow: 0 4px 18px 0 rgba(253, 224, 57, 0.13);
+            font-family: 'Times New Roman', Times, serif;
+            position: relative;
+            overflow: hidden;
+        ">
+            <div style="
+                position: absolute;
+                top: -40px;
+                right: -40px;
+                width: 120px;
+                height: 120px;
+                background: radial-gradient(circle, var(--color-boton) 60%, transparent 100%);
+                opacity: 0.18;
+                z-index: 0;
+            "></div>
+            <img src="1.0 Multimedia/2.0 Logos e imagenes/3.2 Logo 02 .png" alt="Logotipo de EmprendeU" style="
+                display: block;
+                margin: 0 auto;
+                height: 90px;
+                max-width: 100%;
+                border-radius: 16px;
+                box-shadow: 0 2px 8px rgba(253,224,57,0.13);
+                background: #fffdfa;
+                padding: 4px 8px;
+                z-index: 1;
+            ">
+            <h1 style="
+                color: #fff;
+                font-size: 2.2rem;
+                font-weight: bold;
+                margin-top: 14px;
+                margin-bottom: 8px;
+                letter-spacing: 1.2px;
+                text-shadow: 1px 2px 10px rgba(0,0,0,0.13);
+                text-align: center;
+                font-family: 'Times New Roman', Times, serif;
+                z-index: 1;
+            ">
+                Usuario
+            </h1>
+            <button onclick="window.location.href='index.html';" style="
+                margin-top: 8px;
+                background-color: var(--color-boton);
+                color: #222;
+                font-weight: 600;
+                border: none;
+                border-radius: 10px;
+                padding: 10px 28px;
+                font-size: 1.05rem;
+                box-shadow: 0 2px 10px rgba(253,224,57,0.13);
+                transition: background 0.3s, color 0.3s, transform 0.2s;
+                cursor: pointer;
+                font-family: 'Times New Roman', Times, serif;
+                z-index: 1;
+            "
+                onmouseover="this.style.backgroundColor='var(--color-boton-hover)'; this.style.color='var(--color-secundario)'; this.style.transform='scale(1.05)';"
+                onmouseout="this.style.backgroundColor='var(--color-boton)'; this.style.color='#222'; this.style.transform='scale(1)';">
+                ← Regresar a inicio
+            </button>
+        </header>
+            
+        <!-- Agregamos Bootstrap desde CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <main>
+            <!-- Interfaz usuario mejorada con Bootstrap y espacio para subir logotipo -->
+            <section class="perfil-usuario container my-5 p-4 rounded-4 shadow-lg bg-white bg-gradient">
+                <div class="perfil-header row align-items-center mb-4">
+                    <div class="col-md-3 text-center mb-3 mb-md-0">
+                        <img id="avatarUsuario" src="1.0 Multimedia/2.0 Logos e imagenes/3.2 Logo 02 .png" alt="Avatar de usuario" class="avatar-usuario img-fluid rounded-circle border border-3 border-warning shadow-sm" style="width: 110px; height: 110px; object-fit: cover;">
+                        <!-- Espacio para subir logotipo -->
+                        <form id="formLogo" class="mt-3">
+                            <label for="inputLogo" class="form-label small text-secondary">Subir logotipo (JPG o PNG):</label>
+                            <input class="form-control form-control-sm" type="file" id="inputLogo" accept="image/png, image/jpeg">
+                        </form>
+                    </div>
+                    <div class="col-md-9">
+                        <h2 class="fw-bold text-warning mb-1" style="font-family: 'Times New Roman', Times, serif;">¡Bienvenido, Usuario!</h2>
+                        <p class="subtitulo text-secondary mb-0">Este es tu perfil personal</p>
+                    </div>
+                </div>
+                <div class="perfil-opciones row g-4">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="opcion card h-100 border-0 shadow-sm">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title text-warning mb-2">Compras</h3>
+                                <p class="card-text flex-grow-1">Revisa tu historial de compras y gestiona tus pedidos.</p>
+                                <button class="btn-perfil btn btn-warning mt-2">Ver compras</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="opcion card h-100 border-0 shadow-sm">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title text-warning mb-2">Ventas</h3>
+                                <p class="card-text flex-grow-1">Consulta tus ventas y administra tus productos.</p>
+                                <button class="btn-perfil btn btn-warning mt-2">Ver ventas</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="opcion card h-100 border-0 shadow-sm">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title text-warning mb-2">Datos personales</h3>
+                                <p class="card-text flex-grow-1">Actualiza tu información y preferencias.</p>
+                                <button class="btn-perfil btn btn-warning mt-2">Editar perfil</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="opcion card h-100 border-0 shadow-sm">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title text-warning mb-2">Notificaciones</h3>
+                                <p class="card-text flex-grow-1">Mantente al tanto de novedades y mensajes importantes.</p>
+                                <button class="btn-perfil btn btn-warning mt-2">Ver notificaciones</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="opcion card h-100 border-0 shadow-sm">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="card-title text-warning mb-2">Mensajes</h3>
+                                <p class="card-text flex-grow-1">Revisa y responde tus mensajes.</p>
+                                <button class="btn-perfil btn btn-warning mt-2">Ver mensajes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Estilos personalizados adicionales -->
+        <style>
+            .perfil-usuario {
+                background: linear-gradient(135deg, #fffdfa 80%, #fffbe7 100%);
+                border: 2.5px solid coral;
+            }
+            .avatar-usuario {
+                transition: box-shadow 0.2s, border 0.2s;
+            }
+            .avatar-usuario:hover {
+                box-shadow: 0 0 0 4px #ffe7c2, 0 4px 16px rgba(255,218,7,0.18);
+                border-color: #fdc13b;
+            }
+            .btn-perfil {
+                background: linear-gradient(90deg, rgb(253, 224, 57) 80%, rgb(255, 218, 7) 100%);
+                color: #222;
+                border: none;
+                border-radius: 8px;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
+                font-size: 1rem;
+                box-shadow: 0 2px 8px rgba(253,224,57,0.10);
+                transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+            }
+            .btn-perfil:hover {
+                background: linear-gradient(90deg, rgb(255, 218, 7) 80%, rgb(253, 224, 57) 100%);
+                box-shadow: 0 4px 16px rgba(255,218,7,0.18);
+                transform: translateY(-2px) scale(1.03);
+            }
+            .opcion.card {
+                border-radius: 14px;
+                border: 1.5px solid #ffe7c2;
+                transition: box-shadow 0.2s, border 0.2s;
+            }
+            .opcion.card:hover {
+                box-shadow: 0 4px 16px rgba(255,218,7,0.13);
+                border: 1.5px solid coral;
+            }
+            @media (max-width: 600px) {
+                .perfil-usuario {
+                    padding: 12px 2px 8px 2px !important;
+                }
+                .perfil-header h2 {
+                    font-size: 1.2rem;
+                }
+            }
+        </style>
+
+        <!-- Script para previsualizar la imagen subida -->
+        <script>
+            document.getElementById('inputLogo').addEventListener('change', function(event) {
+                const file = event.target.files[0];
+                if (file && (file.type === "image/png" || file.type === "image/jpeg")) {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        document.getElementById('avatarUsuario').src = e.target.result;
+                    }
+                    reader.readAsDataURL(file);
+                } else if (file) {
+                    alert("Por favor, selecciona una imagen JPG o PNG.");
+                    event.target.value = "";
+                }
+            });
+        </script>
+        <!-- End Bootstrap JS (opcional, solo si usas componentes JS de Bootstrap) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</html>

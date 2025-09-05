@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alimentos - EmprendeU</title>
+    <link rel="stylesheet" href="Stylealimento.css">
+</head>
+
+<body>
+    <main>
+        <header class="header">
+            <div class="header-content">
+                <img src="1.0 Multimedia/2.0 Logos e imagenes/3.2 Logo 02 .png" alt="Logotipo de EmprendeU" class="Logotipo">
+            </div>
+            <button class="btn-volver" onclick="window.location.href='index.html';">
+                ← Volver a inicio
+            </button>
+        </header>
+
+        <section class="hero-section">
+            <h2 class="titulo-principal">Alimentos</h2>
+            <p class="subtitulo">Descubre los deliciosos emprendimientos gastronómicos de nuestra comunidad</p>
+        </section>
+
+        <!--Cards emprendimientos-->
+        <section class="productos-section">
+            <div class="container">
+                <div class="productos-grid">
+                    <div class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/1.0 Alimentos/Pasteles.png" alt="Postres Lyly" />
+                        </div>
+                        <div class="producto-info">
+                    <h3>Postres Lyly</h3>
+                            <p>Deliciosos postres artesanales para endulzar tu día</p>
+                            <button class="btn-producto" onclick="abrirModal('modal-postres-lyly')">Ver Más</button>
+                        </div>
+                    </div>
+                    
+                    <div class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/1.0 Alimentos/pizza.png" alt="La italiana" />
+                  </div>
+                        <div class="producto-info">
+                    <h3>La italiana</h3>
+                            <p>Auténtica cocina italiana con ingredientes frescos</p>
+                            <button class="btn-producto" onclick="abrirModal('modal-la-italiana')">Ver Más</button>
+                        </div>
+                    </div>
+                    
+                    <div class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/1.0 Alimentos/sand.png" alt="Sancho's" />
+                  </div>
+                        <div class="producto-info">
+                            <h3>Sancho's</h3>
+                            <p>Hamburguesas gourmet con el mejor sabor</p>
+                            <button class="btn-producto" onclick="abrirModal('modal-sanchos')">Ver Más</button>
+                  </div>
+                </div>
+                    
+                    <div class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/1.0 Alimentos/empanadas.png" alt="Camaradería" />
+                        </div>
+                        <div class="producto-info">
+                      <h3>Camaradería</h3>
+                            <p>Comida casera que une a la comunidad</p>
+                            <button class="btn-producto" onclick="abrirModal('modal-camaraderia')">Ver Más</button>
+                        </div>
+                    </div>
+                    
+                    <div class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/1.0 Alimentos/cacao.png" alt="TAMAOS" />
+                        </div>
+                        <div class="producto-info">
+                      <h3>TAMAOS</h3>
+                            <p>Tamales tradicionales con recetas familiares</p>
+                            <button class="btn-producto" onclick="abrirModal('modal-tamaos')">Ver Más</button>
+                        </div>
+                    </div>
+                    
+                    <div class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/1.0 Alimentos/desayuno.png" alt="Sonrise Surprise" />
+                        </div>
+                        <div class="producto-info">
+                      <h3>Sonrise Surprise</h3>
+                            <p>Desayunos sorpresa para empezar el día</p>
+                            <button class="btn-producto" onclick="abrirModal('modal-sonrise')">Ver Más</button>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+
+        <!-- Modales -->
+        <!-- Modal Postres Lyly -->
+        <div id="modal-postres-lyly" class="modal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Postres Lyly</h2>
+                        <span class="close" onclick="cerrarModal('modal-postres-lyly')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/1.0 Alimentos/Pasteles.png" alt="Postres Lyly" />
+                        </div>
+                        <div class="modal-info">
+                            <h3>Deliciosos Postres Artesanales</h3>
+                            <p>Postres Lyly ofrece una amplia variedad de postres artesanales elaborados con ingredientes frescos y recetas tradicionales. Desde tortas personalizadas hasta cupcakes y galletas, cada producto está hecho con amor y dedicación.</p>
+                            <ul>
+                                <li>🎂 Tortas personalizadas para ocasiones especiales</li>
+                                <li>🧁 Cupcakes con sabores únicos</li>
+                                <li>🍪 Galletas artesanales</li>
+                                <li>🍰 Postres tradicionales colombianos</li>
+                            </ul>
+                            <div class="contacto-info">
+                                <h4>Información de Contacto:</h4>
+                                <p><strong>Teléfono:</strong> +57 300 123 4567</p>
+                                <p><strong>Instagram:</strong> @postreslyly</p>
+                                <p><strong>Horario:</strong> Lunes a Sábado 8:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal La Italiana -->
+        <div id="modal-la-italiana" class="modal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>La Italiana</h2>
+                        <span class="close" onclick="cerrarModal('modal-la-italiana')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/1.0 Alimentos/pizza.png" alt="La italiana" />
+                        </div>
+                        <div class="modal-info">
+                            <h3>Auténtica Cocina Italiana</h3>
+                            <p>La Italiana trae los sabores tradicionales de Italia a tu mesa. Nuestros platos están preparados con ingredientes frescos y recetas auténticas que han pasado de generación en generación.</p>
+                            <ul>
+                                <li>🍝 Pastas frescas hechas a mano</li>
+                                <li>🍕 Pizzas con masa artesanal</li>
+                                <li>🥗 Ensaladas frescas mediterráneas</li>
+                                <li>🍷 Vinos italianos seleccionados</li>
+                            </ul>
+                            <div class="contacto-info">
+                                <h4>Información de Contacto:</h4>
+                                <p><strong>Teléfono:</strong> +57 300 234 5678</p>
+                                <p><strong>Instagram:</strong> @laitaliana_rest</p>
+                                <p><strong>Horario:</strong> Martes a Domingo 12:00 PM - 10:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Sancho's -->
+        <div id="modal-sanchos" class="modal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Sancho's</h2>
+                        <span class="close" onclick="cerrarModal('modal-sanchos')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/1.0 Alimentos/sand.png" alt="Sancho's" />
+                        </div>
+                        <div class="modal-info">
+                            <h3>Hamburguesas Gourmet</h3>
+                            <p>Sancho's ofrece las mejores hamburguesas gourmet de la ciudad. Cada hamburguesa está preparada con carne premium, ingredientes frescos y salsas artesanales que crean una experiencia única.</p>
+                            <ul>
+                                <li>🍔 Hamburguesas con carne Angus</li>
+                                <li>🥓 Opciones vegetarianas y veganas</li>
+                                <li>🍟 Papas fritas artesanales</li>
+                                <li>🥤 Bebidas naturales y refrescantes</li>
+                            </ul>
+                            <div class="contacto-info">
+                                <h4>Información de Contacto:</h4>
+                                <p><strong>Teléfono:</strong> +57 300 345 6789</p>
+                                <p><strong>Instagram:</strong> @sanchos_burgers</p>
+                                <p><strong>Horario:</strong> Lunes a Domingo 11:00 AM - 11:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Camaradería -->
+        <div id="modal-camaraderia" class="modal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Camaradería</h2>
+                        <span class="close" onclick="cerrarModal('modal-camaraderia')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/1.0 Alimentos/empanadas.png" alt="Camaradería" />
+                        </div>
+                        <div class="modal-info">
+                            <h3>Comida Casera que Une</h3>
+                            <p>Camaradería es más que un restaurante, es un lugar donde la comunidad se reúne para disfrutar de comida casera preparada con amor. Nuestros platos tradicionales colombianos te harán sentir como en casa.</p>
+                            <ul>
+                                <li>🍲 Ajiaco santafereño tradicional</li>
+                                <li>🥘 Bandeja paisa auténtica</li>
+                                <li>🍛 Sancocho de gallina</li>
+                                <li>🥤 Jugos naturales de frutas frescas</li>
+                            </ul>
+                            <div class="contacto-info">
+                                <h4>Información de Contacto:</h4>
+                                <p><strong>Teléfono:</strong> +57 300 456 7890</p>
+                                <p><strong>Instagram:</strong> @camaraderia_rest</p>
+                                <p><strong>Horario:</strong> Lunes a Sábado 6:00 AM - 8:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal TAMAOS -->
+        <div id="modal-tamaos" class="modal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>TAMAOS</h2>
+                        <span class="close" onclick="cerrarModal('modal-tamaos')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/1.0 Alimentos/cacao.png" alt="TAMAOS" />
+                        </div>
+                        <div class="modal-info">
+                            <h3>Tamales Tradicionales</h3>
+                            <p>TAMAOS preserva las recetas tradicionales de tamales que han pasado de generación en generación. Cada tamal está envuelto a mano y cocido lentamente para obtener el sabor auténtico.</p>
+                            <ul>
+                                <li>🌽 Tamales de maíz con cerdo</li>
+                                <li>🐔 Tamales de pollo</li>
+                                <li>🥓 Tamales de costilla</li>
+                                <li>🌶️ Tamales picantes especiales</li>
+                            </ul>
+                            <div class="contacto-info">
+                                <h4>Información de Contacto:</h4>
+                                <p><strong>Teléfono:</strong> +57 300 567 8901</p>
+                                <p><strong>Instagram:</strong> @tamaos_tradicional</p>
+                                <p><strong>Horario:</strong> Martes a Domingo 5:00 AM - 2:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Sonrise Surprise -->
+        <div id="modal-sonrise" class="modal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Sonrise Surprise</h2>
+                        <span class="close" onclick="cerrarModal('modal-sonrise')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/1.0 Alimentos/desayuno.png" alt="Sonrise Surprise" />
+                        </div>
+                        <div class="modal-info">
+                            <h3>Desayunos Sorpresa</h3>
+                            <p>Sonrise Surprise transforma tu mañana con desayunos únicos y sorprendentes. Cada desayuno está diseñado para darte la energía y el buen humor que necesitas para empezar el día.</p>
+                            <ul>
+                                <li>🥞 Pancakes con toppings creativos</li>
+                                <li>🍳 Huevos benedictinos especiales</li>
+                                <li>🥐 Croissants rellenos artesanales</li>
+                                <li>☕ Café de especialidad y bebidas frías</li>
+                            </ul>
+                            <div class="contacto-info">
+                                <h4>Información de Contacto:</h4>
+                                <p><strong>Teléfono:</strong> +57 300 678 9012</p>
+                                <p><strong>Instagram:</strong> @sonrise_surprise</p>
+                                <p><strong>Horario:</strong> Lunes a Domingo 6:00 AM - 12:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025, Todos los derechos reservados<br>
+                <strong>EmprendeU</strong> <br>
+                emprendimientos de nuestra comunidad educativa UPTC<br>
+                contácto <br>
+                <a href="#" class="nav-link">Instagram -</a><a href="#" class="nav-link">Facebook</a>
+            </p>
+        </footer>
+    </main>
+
+    <script>
+        // Función para abrir modal
+        function abrirModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Prevenir scroll del body
+        }
+
+        // Función para cerrar modal
+        function cerrarModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Restaurar scroll del body
+        }
+
+        // Cerrar modal al hacer clic fuera del contenido
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // Cerrar modal con tecla Escape
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                const modales = document.querySelectorAll('.modal');
+                modales.forEach(modal => {
+                    if (modal.style.display === 'block') {
+                        modal.style.display = 'none';
+                        document.body.style.overflow = 'auto';
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

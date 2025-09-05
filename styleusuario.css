@@ -1,0 +1,32 @@
+:root {
+    --color-primario: rgb(255, 253, 253);
+    --color-secundario: coral;
+    --color-texto: black;
+    --color-boton: rgb(253, 224, 57);
+    --color-boton-hover: rgb(255, 218, 7);
+}
+
+/* Estilos generales */
+html {
+    font-size: 16px;
+    /* Base para rem */
+    font-family:'Times New Roman', Times, serif
+
+}
+
+.Botonlang {
+    text-align: center;
+    text-decoration: none;
+    background-color: black;
+    border-radius: 6px;
+    padding: 5px;
+    color: white;
+}
+
+.Botonlang:hover {
+    background-color: var(--color-boton-hover);
+}
+
+.Botonlang:active {
+    background-color: rgb(184, 153, 18);
+}

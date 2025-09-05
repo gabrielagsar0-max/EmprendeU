@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ropa y Accesorios - EmprendeU</title>
+    <link rel="stylesheet" href="Stylealimento.css">
+</head>
+
+<body>
+    <main>
+        <header class="header">
+            <div class="header-content">
+                <img src="1.0 Multimedia/2.0 Logos e imagenes/3.2 Logo 02 .png" alt="Logotipo de EmprendeU" class="Logotipo">
+            </div>
+            <button class="btn-volver" onclick="window.location.href='index.html';">
+                ← Volver a inicio
+            </button>
+        </header>
+
+        <section class="hero-section">
+            <h2 class="titulo-principal">Ropa y Accesorios</h2>
+            <p class="subtitulo">Descubre las tendencias en moda y accesorios de nuestra comunidad</p>
+        </section>
+
+        <!--Cards emprendimientos-->
+        <section class="productos-section">
+            <div class="container">
+                <div class="productos-grid">
+                    <div class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/4.0 KNITT.png" alt="KNITT Fashion" />
+                        </div>
+                        <div class="producto-info">
+                            <h3>KNITT Fashion</h3>
+                            <p>Ropa tejida a mano con estilo y comodidad</p>
+                            <button class="btn-producto" onclick="abrirModal('modal-knitt-fashion')">Ver Más</button>
+                        </div>
+                    </div>
+                    
+                    <div class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/2.0 NECKALE.png" alt="NECKALE Style" />
+                        </div>
+                        <div class="producto-info">
+                            <h3>NECKALE Style</h3>
+                            <p>Accesorios de moda únicos y elegantes</p>
+                            <button class="btn-producto" onclick="abrirModal('modal-neckale-style')">Ver Más</button>
+                        </div>
+                    </div>
+                    
+                    <div class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/1.0 TORTAS&TORTAS.png" alt="Sweet Fashion" />
+                        </div>
+                        <div class="producto-info">
+                            <h3>Sweet Fashion</h3>
+                            <p>Ropa y accesorios con estilo dulce y divertido</p>
+                            <button class="btn-producto" onclick="abrirModal('modal-sweet-fashion')">Ver Más</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modales -->
+        <!-- Modal KNITT Fashion -->
+        <div id="modal-knitt-fashion" class="modal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>KNITT Fashion</h2>
+                        <span class="close" onclick="cerrarModal('modal-knitt-fashion')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/4.0 KNITT.png" alt="KNITT Fashion" />
+                        </div>
+                        <div class="modal-info">
+                            <h3>Ropa Tejida a Mano con Estilo</h3>
+                            <p>KNITT Fashion combina la tradición del tejido artesanal con las tendencias modernas de la moda. Cada pieza está diseñada para ofrecer comodidad, durabilidad y estilo único.</p>
+                            <ul>
+                                <li>👕 Suéteres y cardigans personalizados</li>
+                                <li>🧥 Abrigos y chaquetas tejidas</li>
+                                <li>👗 Vestidos y faldas únicas</li>
+                                <li>🧣 Accesorios de temporada</li>
+                            </ul>
+                            <div class="contacto-info">
+                                <h4>Información de Contacto:</h4>
+                                <p><strong>Teléfono:</strong> +57 300 777 8888</p>
+                                <p><strong>Instagram:</strong> @knitt_fashion</p>
+                                <p><strong>Horario:</strong> Lunes a Sábado 9:00 AM - 8:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal NECKALE Style -->
+        <div id="modal-neckale-style" class="modal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>NECKALE Style</h2>
+                        <span class="close" onclick="cerrarModal('modal-neckale-style')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/2.0 NECKALE.png" alt="NECKALE Style" />
+                        </div>
+                        <div class="modal-info">
+                            <h3>Accesorios de Moda Únicos</h3>
+                            <p>NECKALE Style ofrece una colección exclusiva de accesorios de moda que complementan cualquier outfit. Cada pieza está diseñada para realzar tu estilo personal.</p>
+                            <ul>
+                                <li>👜 Bolsos y carteras de diseño</li>
+                                <li>👒 Sombreros y gorras únicas</li>
+                                <li>🕶️ Accesorios para el cabello</li>
+                                <li>👠 Calzado artesanal</li>
+                            </ul>
+                            <div class="contacto-info">
+                                <h4>Información de Contacto:</h4>
+                                <p><strong>Teléfono:</strong> +57 300 888 9999</p>
+                                <p><strong>Instagram:</strong> @neckale_style</p>
+                                <p><strong>Horario:</strong> Martes a Domingo 10:00 AM - 7:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Sweet Fashion -->
+        <div id="modal-sweet-fashion" class="modal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Sweet Fashion</h2>
+                        <span class="close" onclick="cerrarModal('modal-sweet-fashion')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/1.0 TORTAS&TORTAS.png" alt="Sweet Fashion" />
+                        </div>
+                        <div class="modal-info">
+                            <h3>Ropa y Accesorios con Estilo Dulce</h3>
+                            <p>Sweet Fashion crea ropa y accesorios con un toque dulce y divertido. Perfecto para quienes aman destacar con colores vibrantes y diseños únicos.</p>
+                            <ul>
+                                <li>👚 Ropa casual con estampados únicos</li>
+                                <li>🎀 Accesorios coloridos y divertidos</li>
+                                <li>👕 Camisetas personalizadas</li>
+                                <li>🎪 Ropa temática para ocasiones especiales</li>
+                            </ul>
+                            <div class="contacto-info">
+                                <h4>Información de Contacto:</h4>
+                                <p><strong>Teléfono:</strong> +57 300 999 0000</p>
+                                <p><strong>Instagram:</strong> @sweet_fashion</p>
+                                <p><strong>Horario:</strong> Lunes a Viernes 8:00 AM - 9:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025, Todos los derechos reservados<br>
+                <strong>EmprendeU</strong> <br>
+                emprendimientos de nuestra comunidad educativa UPTC<br>
+                contácto <br>
+                <a href="#" class="nav-link">Instagram -</a><a href="#" class="nav-link">Facebook</a>
+            </p>
+        </footer>
+    </main>
+
+    <script>
+        // Función para abrir modal
+        function abrirModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Prevenir scroll del body
+        }
+
+        // Función para cerrar modal
+        function cerrarModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Restaurar scroll del body
+        }
+
+        // Cerrar modal al hacer clic fuera del contenido
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // Cerrar modal con tecla Escape
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                const modales = document.querySelectorAll('.modal');
+                modales.forEach(modal => {
+                    if (modal.style.display === 'block') {
+                        modal.style.display = 'none';
+                        document.body.style.overflow = 'auto';
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

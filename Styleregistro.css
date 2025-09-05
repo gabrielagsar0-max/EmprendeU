@@ -1,0 +1,51 @@
+:root {
+    --color-primario: rgb(255, 253, 253);
+    --color-secundario: coral;
+    --color-texto: black;
+    --color-boton: rgb(253, 224, 57);
+    --color-boton-hover: rgb(255, 218, 7);
+}
+
+/* Estilos generales */
+html {
+    font-size: 16px;
+    /* Base para rem */
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+
+}
+
+/* Encabezado */
+
+header img {
+    height: 400px;
+    /* tamaño fijo de imagen mayor */
+    width: auto;
+}
+
+.headermodificado {
+    background-color: var(--color-secundario)
+}
+
+.Logotipo {
+    height: 60px; 
+    margin-right: 15px
+}
+
+.fuentehead {
+    font-size: 2rem;
+    color: #fff;
+}
+
+#encabezado h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+      footer {
+        background-color: var(--color-secundario);
+        color: var(black);
+        text-align: center;
+        padding: 1rem;
+        font-size: 0.9rem;
+    }

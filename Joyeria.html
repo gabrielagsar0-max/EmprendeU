@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyería - EmprendeU</title>
+    <link rel="stylesheet" href="Stylealimento.css">
+</head>
+
+<body>
+    <main>
+        <header class="header">
+            <div class="header-content">
+                <img src="1.0 Multimedia/2.0 Logos e imagenes/3.2 Logo 02 .png" alt="Logotipo de EmprendeU" class="Logotipo">
+            </div>
+            <button class="btn-volver" onclick="window.location.href='index.html';">
+                ← Volver a inicio
+            </button>
+        </header>
+
+        <section class="hero-section">
+            <h2 class="titulo-principal">Joyería</h2>
+            <p class="subtitulo">Descubre las hermosas piezas de joyería artesanal de nuestra comunidad</p>
+        </section>
+
+        <!--Cards emprendimientos-->
+        <section class="productos-section">
+            <div class="container">
+                <div class="productos-grid">
+                    <div class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/2.0 NECKALE.png" alt="NECKALE Joyería" />
+                        </div>
+                        <div class="producto-info">
+                            <h3>NECKALE Joyería</h3>
+                            <p>Joyería fina artesanal con diseños únicos y elegantes</p>
+                            <button class="btn-producto" onclick="abrirModal('modal-neckale-joyeria')">Ver Más</button>
+                        </div>
+                    </div>
+                    
+                    <div class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/4.0 KNITT.png" alt="KNITT Accesorios" />
+                        </div>
+                        <div class="producto-info">
+                            <h3>KNITT Accesorios</h3>
+                            <p>Accesorios tejidos y joyería textil artesanal</p>
+                            <button class="btn-producto" onclick="abrirModal('modal-knitt-accesorios')">Ver Más</button>
+                        </div>
+                    </div>
+                    
+                    <div class="producto-card">
+                        <div class="producto-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/1.0 TORTAS&TORTAS.png" alt="Dulce Joyería" />
+                        </div>
+                        <div class="producto-info">
+                            <h3>Dulce Joyería</h3>
+                            <p>Joyería temática y accesorios únicos con estilo</p>
+                            <button class="btn-producto" onclick="abrirModal('modal-dulce-joyeria')">Ver Más</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modales -->
+        <!-- Modal NECKALE Joyería -->
+        <div id="modal-neckale-joyeria" class="modal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>NECKALE Joyería</h2>
+                        <span class="close" onclick="cerrarModal('modal-neckale-joyeria')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/2.0 NECKALE.png" alt="NECKALE Joyería" />
+                        </div>
+                        <div class="modal-info">
+                            <h3>Joyería Fina Artesanal</h3>
+                            <p>NECKALE Joyería crea piezas únicas de joyería fina utilizando técnicas tradicionales y materiales de primera calidad. Cada pieza está diseñada para destacar la belleza natural y la elegancia.</p>
+                            <ul>
+                                <li>💎 Anillos de compromiso personalizados</li>
+                                <li>📿 Collares con piedras preciosas</li>
+                                <li>💍 Aretes de diseño exclusivo</li>
+                                <li>⌚ Relojes artesanales únicos</li>
+                            </ul>
+                            <div class="contacto-info">
+                                <h4>Información de Contacto:</h4>
+                                <p><strong>Teléfono:</strong> +57 300 444 5555</p>
+                                <p><strong>Instagram:</strong> @neckale_joyeria</p>
+                                <p><strong>Horario:</strong> Lunes a Sábado 9:00 AM - 7:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal KNITT Accesorios -->
+        <div id="modal-knitt-accesorios" class="modal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>KNITT Accesorios</h2>
+                        <span class="close" onclick="cerrarModal('modal-knitt-accesorios')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/4.0 KNITT.png" alt="KNITT Accesorios" />
+                        </div>
+                        <div class="modal-info">
+                            <h3>Accesorios Tejidos y Joyería Textil</h3>
+                            <p>KNITT Accesorios combina la tradición del tejido con la modernidad de la joyería, creando piezas únicas que fusionan texturas y colores de manera innovadora.</p>
+                            <ul>
+                                <li>🧶 Pulseras tejidas con hilos especiales</li>
+                                <li>📿 Collares con cuentas artesanales</li>
+                                <li>💍 Anillos con elementos textiles</li>
+                                <li>🎀 Accesorios para el cabello únicos</li>
+                            </ul>
+                            <div class="contacto-info">
+                                <h4>Información de Contacto:</h4>
+                                <p><strong>Teléfono:</strong> +57 300 555 6666</p>
+                                <p><strong>Instagram:</strong> @knitt_accesorios</p>
+                                <p><strong>Horario:</strong> Martes a Domingo 10:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Dulce Joyería -->
+        <div id="modal-dulce-joyeria" class="modal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Dulce Joyería</h2>
+                        <span class="close" onclick="cerrarModal('modal-dulce-joyeria')">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-imagen">
+                            <img src="1.0 Multimedia/1.0 Logos empresas ejemplo/1.0 TORTAS&TORTAS.png" alt="Dulce Joyería" />
+                        </div>
+                        <div class="modal-info">
+                            <h3>Joyería Temática y Accesorios Únicos</h3>
+                            <p>Dulce Joyería crea piezas temáticas inspiradas en la dulzura y la creatividad. Cada accesorio cuenta una historia única y está diseñado para personas que aman destacar con estilo.</p>
+                            <ul>
+                                <li>🍭 Aretes con formas dulces y coloridas</li>
+                                <li>🍰 Collares temáticos únicos</li>
+                                <li>🍪 Pulseras con charms especiales</li>
+                                <li>🎂 Accesorios para ocasiones especiales</li>
+                            </ul>
+                            <div class="contacto-info">
+                                <h4>Información de Contacto:</h4>
+                                <p><strong>Teléfono:</strong> +57 300 666 7777</p>
+                                <p><strong>Instagram:</strong> @dulce_joyeria</p>
+                                <p><strong>Horario:</strong> Lunes a Viernes 8:00 AM - 8:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025, Todos los derechos reservados<br>
+                <strong>EmprendeU</strong> <br>
+                emprendimientos de nuestra comunidad educativa UPTC<br>
+                contácto <br>
+                <a href="#" class="nav-link">Instagram -</a><a href="#" class="nav-link">Facebook</a>
+            </p>
+        </footer>
+    </main>
+
+    <script>
+        // Función para abrir modal
+        function abrirModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Prevenir scroll del body
+        }
+
+        // Función para cerrar modal
+        function cerrarModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Restaurar scroll del body
+        }
+
+        // Cerrar modal al hacer clic fuera del contenido
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // Cerrar modal con tecla Escape
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                const modales = document.querySelectorAll('.modal');
+                modales.forEach(modal => {
+                    if (modal.style.display === 'block') {
+                        modal.style.display = 'none';
+                        document.body.style.overflow = 'auto';
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
